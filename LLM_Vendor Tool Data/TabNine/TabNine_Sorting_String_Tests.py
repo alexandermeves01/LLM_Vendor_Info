@@ -1,0 +1,10 @@
+def test_ginorts():
+    assert ginorts("a1B2c3") == "a1b2c3"
+    assert ginorts("A1b2C3") == "a1b2c3"
+    assert ginorts("1aB2c3") == "1ab2c3"
+    assert ginorts("1A2b3C") == "1a2b3c"
+    assert ginorts("a12b3c4") == "a12b3c4"
+    assert ginorts("a1B2c43") == "a1b2c43"
+    assert ginorts("a1B2C43") == "a1b2c43"
+    assert ginorts("1aB2c43") == "1ab2c43"
+    assert ginorts("1A2b3C4") == "1a2b3c4"
